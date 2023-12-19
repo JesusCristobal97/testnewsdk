@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFVotingManager.View.MenuControlView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFVotingManager.View"
+        mc:Ignorable="d"
+        Title="MenuControlView" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Configuración">
+                <MenuItem Header="Básico" Click="Screen_Basic_Click"/>
+                <MenuItem Header="Preguntas" Click="Screen_Question_Click"/>
+                <MenuItem Header="Gráfico" Click="Screen_Graphic_Click"/>
+                <MenuItem Header="Participantes" Click="Screen_Participant_Click"/>
+                <!-- Más opciones de menú aquí -->
+            </MenuItem>
+            <MenuItem Header="Votación">
+                <MenuItem Header="Control" Click="Pantalla_Votation_Click"/> 
+                <!-- Más opciones de menú aquí -->
+            </MenuItem>
+            <MenuItem Header="Ver">
+                <MenuItem Header="Gráfico" Click="Pantalla_Graphic_Click"/>
+                <!-- Más opciones de menú aquí -->
+            </MenuItem>
+            <!-- Más elementos del menú principal aquí -->
+        </Menu>
+
+        <!-- Frame para mostrar el contenido de cada pantalla -->
+        <Frame x:Name="ContenidoFrame" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>
