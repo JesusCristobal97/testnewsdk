@@ -24,19 +24,19 @@ namespace WPFVotingManager.View
 
         private void Screen_Basic_Click(object sender, RoutedEventArgs e)
         {
-            ContenidoFrame.Content = new VotationControlView(); // Asume que Pantalla2 es una clase UserControl
+            ContenidoFrame.Content = new ConfigControlView(); // Asume que Pantalla2 es una clase UserControl
         }
         private void Screen_Question_Click(object sender, RoutedEventArgs e)
         {
-            ContenidoFrame.Content = new VotationControlView(); // Asume que Pantalla2 es una clase UserControl
+            ContenidoFrame.Content = new QuestionControlView(); // Asume que Pantalla2 es una clase UserControl
         }
         private void Screen_Graphic_Click(object sender, RoutedEventArgs e)
         {
-            ContenidoFrame.Content = new VotationControlView(); // Asume que Pantalla2 es una clase UserControl
+            ContenidoFrame.Content = new GraphicCreationControlView(); // Asume que Pantalla2 es una clase UserControl
         }
         private void Screen_Participant_Click(object sender, RoutedEventArgs e)
         {
-            ContenidoFrame.Content = new VotationControlView(); // Asume que Pantalla2 es una clase UserControl
+            ContenidoFrame.Content = new ParticipantControlView(); // Asume que Pantalla2 es una clase UserControl
         }
         private void Pantalla_Votation_Click(object sender, RoutedEventArgs e)
         {
@@ -45,7 +45,8 @@ namespace WPFVotingManager.View
 
         private void Pantalla_Graphic_Click(object sender, RoutedEventArgs e)
         {
-            ContenidoFrame.Content = new VotationControlView(); // Asume que Pantalla2 es una clase UserControl
+            var ventanaSecundaria = new GraphicControlView(); // Asume que tienes una clase VentanaSecundaria
+            ventanaSecundaria.Show(); // Asume que Pantalla2 es una clase UserControl
         }
     }
 }

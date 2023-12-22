@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\usuario\Documents\VotingManager\WPFVotingManager\WPFVotingManager\App.xaml
-3-1145098703
+8814569713
 
-51054232403
-1932140994814
-MainWindow.xaml;View\MenuControlView.xaml;View\VotationControlView.xaml;
+102125645292
+200-1730428091
+MainWindow.xaml;View\ConfigControlView.xaml;View\GraphicControlView.xaml;View\GraphicCreationControlView.xaml;View\MenuControlView.xaml;View\ParticipantControlView.xaml;View\QuestionControlView.xaml;View\VotationControlView.xaml;
 
 False
 

@@ -22,7 +22,14 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Model\" />
+    <Folder Include="NewFolder\" />
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MongoDB.Driver" Version="2.23.1" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
 ﻿
+using LiveCharts.Wpf;
+using LiveCharts.Wpf.Charts.Base;
 using SunVote;
 using System;
 using System.Windows;
@@ -12,6 +14,7 @@ namespace WPFVotingManager.View
     /// </summary>
     public partial class VotationControlView : Page
     {
+        private GraphicControlView secondaryWindow;
 
         BaseConnection baseConn;// = new SunVote.BaseConnection();
         BaseManage baseManage;
@@ -50,6 +53,10 @@ namespace WPFVotingManager.View
             election.KeyStatus += new IElectionEvents_KeyStatusEventHandler(election_KeyStatus);
             election.KeyStatusSN += new IElectionEvents_KeyStatusSNEventHandler(election_KeyStatusSN);
             election.Elector += new IElectionEvents_ElectorEventHandler(election_Elector);
+
+            secondaryWindow = new GraphicControlView();
+            secondaryWindow.DataUpdated += SecondaryWindow_DataUpdated;
+            secondaryWindow.Show();
         }
 
         private void election_Elector(string BaseTag, int KeyID, int NameID, string Name)
@@ -147,6 +154,27 @@ namespace WPFVotingManager.View
         {
             baseConn.Close();
             keypadManage.RemoteOff(0);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var series = secondaryWindow.MyChart.Series[0] as PieSeries; // Asegúrate de seleccionar la serie correcta
+            var random = new Random();
+            double dou = double.Parse(random.Next(12).ToString());
+            if (series != null)
+            {
+                series.Values.Add(dou);
+            }
+        }
+
+        private void SecondaryWindow_DataUpdated(object sender, DataUpdatedEventArgs e)
+        {
+            var series = secondaryWindow.MyChart.Series[0] as PieSeries; // Asegúrate de seleccionar la serie correcta
+            if (series != null)
+            {
+                series.Values.Add(e.NewData);
+            }
+
         }
     }
 }

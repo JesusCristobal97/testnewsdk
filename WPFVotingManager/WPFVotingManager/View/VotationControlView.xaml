@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WPFVotingManager.View"
         mc:Ignorable="d"
         Title="VotationControlView" Height="550" Width="1200" 
-        MouseDown="Window_MouseDown"  
- >
+        MouseDown="Window_MouseDown"  Background="#F6E2BA"
+ >      
     <Grid>
         <!-- Definir las filas y columnas -->
         <Grid.RowDefinitions>
@@ -85,7 +85,7 @@
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" Margin="5" Grid.ColumnSpan="2">
             <Button Content="Reiniciar todo" Width="150" Background="Gray" Foreground="White" FontWeight="Bold" Margin="2"/> 
-            <Button Content="Resultados" Width="150" Background="Gray" Foreground="White" FontWeight="Bold" Margin="2"/>
+            <Button Content="Resultados" Width="150" Background="Gray" Foreground="White" FontWeight="Bold" Margin="2" Click="Button_Click_1"/>
             <Button Content="Resultados totales" Width="150" Background="Gray" Foreground="White" FontWeight="Bold" Margin="2"/>
         </StackPanel>
 

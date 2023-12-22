@@ -1,8 +1,61 @@
 {
   "version": 2,
-  "dgSpecHash": "raQVL8hSG27SGZxJP4SR6PwSx64qEIZAwh+Fwld8vyUS/qczlt7lQBc3k+5iLQFSVBP2cnfdvlV3e6uEp+FnQw==",
+  "dgSpecHash": "jwuPDrQVgJ/p8od5gP40bVpFVxeU26e2YfM0uGrGPGWo7RLRMtuPVbncAybspCWKsZv/N81njB6buFHR7rPrJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\Documents\\VotingManager\\WPFVotingManager\\WPFVotingManager\\WPFVotingManager.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\extended.wpf.toolkit\\4.5.1\\extended.wpf.toolkit.4.5.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mongodb.bson\\2.23.1\\mongodb.bson.2.23.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mongodb.driver\\2.23.1\\mongodb.driver.2.23.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mongodb.driver.core\\2.23.1\\mongodb.driver.core.2.23.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Extended.Wpf.Toolkit 4.5.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts.Wpf 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

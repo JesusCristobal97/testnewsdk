@@ -13,4 +13,10 @@
     <SourceRoot Include="C:\Users\usuario\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\usuario\.nuget\packages\awssdk.core\3.7.100.14</PkgAWSSDK_Core>
+    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\usuario\.nuget\packages\awssdk.securitytoken\3.7.100.14</PkgAWSSDK_SecurityToken>
+    <PkgLiveCharts_Wpf Condition=" '$(PkgLiveCharts_Wpf)' == '' ">C:\Users\usuario\.nuget\packages\livecharts.wpf\0.9.7</PkgLiveCharts_Wpf>
+    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\usuario\.nuget\packages\extended.wpf.toolkit\4.5.1</PkgExtended_Wpf_Toolkit>
+  </PropertyGroup>
 </Project>

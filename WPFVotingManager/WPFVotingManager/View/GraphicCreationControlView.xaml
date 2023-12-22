@@ -1,0 +1,152 @@
+﻿<Page xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"  x:Class="WPFVotingManager.View.GraphicCreationControlView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFVotingManager.View" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="900"
+      Title="GraphicCreationControlView" Background="#F6E2BA" >
+
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" /> 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="25" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0">
+                <TextBlock Text="Gráfico" FontWeight="Bold" FontSize="30"/>
+
+            </StackPanel>
+
+            <Button x:Name="btnClose" Background="red" 
+                Grid.Column="2"
+                BorderThickness="0"
+                FontSize="16"
+                Cursor="Hand"
+                Foreground="White" Content="X" 
+                >
+            </Button>
+            <TextBlock  Grid.Row="1" Grid.Column="0" Text="Básico" FontSize="20" FontWeight="Bold" Margin="20,10,0,0"/>
+
+            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" Margin="20">
+                <Button Height="30" Content="Cargar Imagen de fondo" Width="200" Background="Gray" Foreground="White" FontWeight="Bold" Margin="20,0,0,0"/>
+            </StackPanel> 
+          </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" /> 
+            </Grid.ColumnDefinitions>
+            
+            <!--- Gráfico -->
+            <TextBlock  Grid.Row="0" Grid.Column="0" Text="Gráfico" FontSize="20" FontWeight="Bold" Margin="20,10,0,0"/>
+
+            <TextBlock Grid.Row="1"  Grid.Column="0" Text="Alto"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown Grid.Row="1" Height="30"  Grid.Column="1" Width="150" FontSize="15"  x:Name="miNumericUpDown" Increment="1"/>
+            
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Ancho"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown Grid.Row="2" Height="30"  Grid.Column="1" Width="150" FontSize="15"  x:Name="miNumericUpDown2" Increment="1"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Posición"  FontSize="15" Margin="20,10,10,10"/>
+            <ComboBox Grid.Row="3" Height="30"  Grid.Column="1" Width="150" FontSize="15" />
+
+            <TextBlock Grid.Row="1" Grid.Column="2" Text="Fondo"  FontSize="15" Margin="20,10,10,10"/>
+            <CheckBox Grid.Row="1" Height="30"  Grid.Column="3" Width="150" FontSize="15" />
+
+            <!--- Preguntas -->
+
+            <TextBlock  Grid.Row="4" Grid.Column="0" Text="Preguntas" FontSize="20" FontWeight="Bold" Margin="20,10,0,0"/>
+
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Tamaño de fuente"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="5" Height="30"  Grid.Column="1" Width="150" FontSize="15"  x:Name="miNumericUpDown3" Increment="1"/>
+
+            <TextBlock Grid.Row="6" Grid.Column="0" Text="Tipo de fuente"  FontSize="15" Margin="20,10,10,10"/>
+            <ComboBox Grid.Row="6" Height="30" Grid.Column="1" Width="150" FontSize="15" />
+
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="Posición"  FontSize="15" Margin="20,10,10,10"/>
+            <ComboBox Grid.Row="7" Height="30" Grid.Column="1" Width="150" FontSize="15" />
+
+            <TextBlock Grid.Row="8" Grid.Column="0" Text="Color"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:ColorPicker Grid.Row="8" Height="30" Grid.Column="1" Width="150" FontSize="15" Name="miColorPicker"/>
+
+            <TextBlock Grid.Row="5" Grid.Column="2" Text="Margen superior"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="5" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown4" Increment="1"/>
+
+            <TextBlock Grid.Row="6" Grid.Column="2" Text="Margen izquierdo"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="6" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown5" Increment = "1"/>
+
+
+            <TextBlock Grid.Row="7" Grid.Column="2" Text="Margen derecho"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="7" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown6" Increment ="1"/>
+
+            <TextBlock Grid.Row="8" Grid.Column="2" Text="Margen inferior"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="8" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown7" Increment="1"/>
+
+
+            <!--- Gráfico -->
+            <TextBlock  Grid.Row="9" Grid.Column="0" Text="Respuestas" FontSize="20" FontWeight="Bold" Margin="20,10,0,0"/>
+
+            <TextBlock Grid.Row="10" Grid.Column="0" Text="Tamaño de fuente"  FontSize="15" Margin="20,10,10,10"/>
+            <xctk:IntegerUpDown  Grid.Row="10" Height="30"  Grid.Column="1" Width="150" FontSize="15"  x:Name="miNumericUpDown8" Increment="1"/>
+            
+
+            <TextBlock Grid.Row="11" Grid.Column="0" Text="Tipo de fuente"  FontSize="15" Margin="20,10,10,10"/>
+            <ComboBox Height="30" Grid.Row="11"  Grid.Column="1" Width="150" FontSize="15" />
+
+            <TextBlock Grid.Row="12" Grid.Column="0" Text="Posición"  FontSize="15" Margin="20,10,10,10"/>
+            <ComboBox Height="30" Grid.Row="12"  Grid.Column="1" Width="150" FontSize="15" />
+
+            <TextBlock Grid.Row="13" Grid.Column="0" Text="Color"  FontSize="15" Margin="20,10,10,10"/> 
+            <xctk:ColorPicker Grid.Row="13" Height="30" Grid.Column="1" Width="150" FontSize="15" Name="miColorPicker2"/>
+
+            <TextBlock Grid.Row="10" Grid.Column="2" Text="Alto"  FontSize="15" Margin="20,10,10,10"/> 
+            <xctk:IntegerUpDown  Grid.Row="10" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown9" Increment="1"/>
+
+
+            <TextBlock Grid.Row="11" Grid.Column="2" Text="Ancho"  FontSize="15" Margin="20,10,10,10"/> 
+            <xctk:IntegerUpDown  Grid.Row="11" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown10" Increment="1"/>
+
+
+            <TextBlock Grid.Row="12" Grid.Column="2" Text="Posición"  FontSize="15" Margin="20,10,10,10"/> 
+            <xctk:IntegerUpDown  Grid.Row="12" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown11" Increment="1"/>
+
+
+            <TextBlock Grid.Row="13" Grid.Column="2" Text="Fondo"  FontSize="15" Margin="20,10,10,10"/> 
+            <xctk:IntegerUpDown  Grid.Row="13" Height="30"  Grid.Column="3" Width="150" FontSize="15"  x:Name="miNumericUpDown12" Increment="1"/>
+
+
+            <Button Grid.Column="3" Grid.Row="15" Height="30" Content="Guardar" Width="150" Background="Gray" Foreground="White" FontWeight="Bold" Margin="20,0,0,0"/>
+
+
+        </Grid>
+    </StackPanel>
+</Page>
